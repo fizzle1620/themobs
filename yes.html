@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0" />
+  <link rel="stylesheet" href="yes.css">
+  <title>Kemerut</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .media-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 4px;
+    }
+    .media-row img,
+    .media-row video {
+      width: 400px;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+    }
+    .fixed-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .fixed-bg img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100vw;
+      height: 100vh;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="kilig" style="height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding-top: 15px;">
+    <div class="fixed-bg">
+      <img src="qt/bg2.gif" alt="">
+    </div>
+
+    <div class="media-row">
+      <img src="qt/kilig1.jpg" alt="">
+      <video src="qt/Kilig memes.mp4" autoplay muted loop playsinline></video>
+      <img src="qt/kilig4.jpg" alt="">
+      <img src="qt/kilig2.jpg" alt="">
+    </div>
+
+    <p class="ay" style="font-size: 60px; margin: 10px 0 5px 0; text-align: center;">Tara naaaaa, ayyy ang bagalllll🙄🙄</p>
+    <p class="ay" style="font-size: 60px; margin: 5px 0 15px 0; text-align: center;">wag nangaaa charizzzzzzzzzz🤣🤣</p>
+    <a href="https://www.facebook.com/ricky.santiago.667457#">Send mo dito yung Screen Record HAHAHAHA</a>
+
+    <audio id="sound" controls autoplay loop src="qt/Paligoy cut.MP3" style="transform: scale(1); margin-top: 10px;"></audio>
+  </div>
+</body>
+</html>
