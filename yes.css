@@ -43,7 +43,7 @@ html, body{
   grid-template-columns: 1fr;
   gap: 0.8em;
   width: 100%;
-  max-width: 360px; /* iPhone 14 safe */
+  max-width: 360px; 
 }
 
 /* IMAGES + VIDEO */
@@ -76,7 +76,7 @@ audio{
   max-width: 300px;
 }
 
-/* IPHONE 14 AND UP */
+
 @media (min-width: 390px){
   .media-row{
     grid-template-columns: 1fr 1fr;
