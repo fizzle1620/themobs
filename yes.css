@@ -1,14 +1,89 @@
-
-
-
-.kilig img{
-				width: 200px;
+/* RESET */
+*{
+  box-sizing: border-box;
 }
 
+/* BODY */
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* MAIN CONTAINER */
 .kilig{
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				flex-direction: column;
-				gap:3em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1em;
+  min-height: 100vh;
+  position: relative;
 }
+
+/* BACKGROUND GIF */
+.fixed-bg{
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+.fixed-bg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* MEDIA GRID */
+.media-row{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8em;
+  width: 100%;
+  max-width: 360px; /* iPhone 14 safe */
+}
+
+/* IMAGES + VIDEO */
+.media-row img,
+.media-row video{
+  width: 100%;
+  height: auto;
+  max-height: 45vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* TEXT */
+.ay{
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* LINK */
+.kilig a{
+  font-size: 14px;
+  text-align: center;
+  word-break: break-word;
+}
+
+/* AUDIO */
+audio{
+  width: 100%;
+  max-width: 300px;
+}
+
+/* IPHONE 14 AND UP */
+@media (min-width: 390px){
+  .media-row{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ay{
+    font-size: 32px;
+  }
+}
+
